@@ -1,7 +1,41 @@
-body {
-    background: #818181;
+:root,
+:root[data-theme="dark"] {
+    --primary-bg: #000; /* bg = background */
+    --primary-color: #fff; /* texto */ 
+    --hover-menu: #8f8f8f ; 
+    --icon-color: #1662d4 ;
 }
+
+:root[data-theme="light"] {
+    --primary-bg: #fff ;
+    --primary-color: #000;
+    
+}
+
+body {
+    background: var(--primary-bg); /* fundo */
+    color: var(--primary-color) ; /* cor do texto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    a {
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+
+    a:hover {
+        color: var(--hover-menu) ;
+    }
+    i{
+        color: var(--icon-color) ;
+
+    }
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+
 img{
-    width: 10rem; 
-    height: 10rem;
+    width: 10rem;  /* largura */ 
+    height: 10rem;  /* altura */
 }
