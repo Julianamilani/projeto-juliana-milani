@@ -1,57 +1,161 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Juliana Milani | Meu Website </title>
-    <!-- estilo css -->
+    
     <link rel="stylesheet" href="css/estilo.css">
-    <!-- bootstrap icons -->
+
+    <!-- Estilo CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-</head>
-<body>
-  
-    <header id="header">
-        <!-- navigation -->
-        <nav class="header-nav"> <!-- menu desktop -->
+  </head>
+  <body>
+
+    <header id="header"> <!-- cabeçalho -->
+        <nav class="header-nav">
+       
             <ul class="menu menu-principal">
-                <li class=" menu item">
-                    <a href="" class="menu-link"> 
-                        <span class="menu-text"> Home </span> 
-                    </a> 
+                <li class="menu-item">
+                   <a class="menu-link active" href="#home"> 
+                       <span class="menu-text"> Home </span> 
+                   </a>
                 </li>
-                <li class=" menu item">
-                    <a href="" class="menu-link"> 
-                        <span class="menu-text"> Projetos </span> 
-                    </a> 
+                <li class="menu-item">
+                    <a class="menu-link" href="#projetos">
+                       <span class="menu-text"> Projetos </span> 
+                    </a>
                 </li>
-                <li class=" menu item">
-                    <a href="" class="menu-link"> 
-                        <span class="menu-text"> Sobre </span> 
-                    </a> 
+                <li class="menu-item">
+                    <a class="menu-link" href="#sobre">
+                       <span class="menu-text"> Sobre </span> 
+                    </a>
                 </li>
-                <li class=" menu item">
-                    <a href="" class="menu-link"> 
-                        <span class="menu-text"> Contato </span> 
-                    </a> 
+                <li class="menu-item">
+                    <a class="menu-link" href="#contato">
+                       <span class="menu-text"> Contato </span> 
+                    </a>
                 </li>
             </ul>
-        </nav> 
-
-        <!-- logo -->
-        <div class="header-logo">
+        </nav>
+        
+        <div class="header-logo">  <!-- area do logo -->
             <a href="#home">
-                <img src="img/logo.png" alt="">
+                <img class="logo" src="img/logo.png" alt="">
             </a>
-        </div>
+        </div><!-- Fim area do logo -->
 
         <div class="header-toggle">
-            <i class="bi bi-sun"></i>
+            <i id="toggleTheme" class="bi bi-sun"></i>
         </div>
 
-    </header> <!-- fim header -->
+    </header> <!-- fim cabeçalho -->
 
-</body>
+    <!-- Menu Mobile -->
+    <nav class="nav-mobile"> 
+        <ul class="menu menu-mobile">
+
+            <li class="menu-item">
+                <a href="" class="menu-link active">
+                    <i class="menu-icon bi bi-house-door"> </i>
+                    <span class="menu-text"> Home </span>
+                </a>
+            </li>
+
+            <li class="menu-item"></li>
+                <a href="" class="menu-link active">
+                    <i class="menu-icon bi bi-window-stack"> </i>
+                    <span class="menu-text"> Projetos </span>
+                </a>
+            </li>
+
+            <li class="menu-item"></li>
+                <a href="" class="menu-link active">
+                    <i class="menu-icon bi bi-person"> </i>
+                    <span class="menu-text"> Sobre </span>
+                </a>
+            </li>
+
+            <li class="menu-item"></li>
+                <a href="" class="menu-link active">
+                    <i class="menu-icon bi bi-telephone"> </i>
+                    <span class="menu-text"> Contato </span>
+                </a>
+            </li>
+
+        </ul> 
+    </nav> <!-- Fim menu mobile -->
+
+    <main id="home"> 
+        <div class="main-content">
+            <h1> <b>Soluções Criativas &</b> 
+            Desenvolvimento Front-End </h1>
+            <!-- titulo / slogan-->
+
+             <p> Juliana Milani, São Paulo - SP, Recreadora Infantil </p>
+             
+             <ul class="menu menu-social">
+
+             
+            <li>
+                <a href="https://github.com/Julianamilani" target="_blank">
+                   <i class="menu-icon bi bi-github"> </i>
+                </a>
+             </li>
+
+             <li>
+                <a href="https://www.linkedin.com/in/juliana-milani-gondin-a852746a/">
+                    <i class="menu-icon bi bi-linkedin"></i>
+                </a>
+             </li>
+
+             <li>
+                <a href="www.instagram.com/Julianagondin23">
+                    <i class="menu-icon bi bi-instagram"></i>
+                </a>
+             </li>
+
+             <li></li>
+                <a href="http://wa.me/+5511993355762">
+                    <i class="menu-icon bi bi-whatsapp"></i>
+                </a>
+             </li>
+
+
+            </ul> <!-- Fim Redes Sociais -->
+
+            <a href="#projetos">
+                <button class="btn btn-primary"> 
+                    <span> Ver Projetos </span>
+                    <i class="bi bi-arrow-down-right"> </i>
+                </button>
+            </a>
+
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/S_ZglRs16Ns" title="TOP 10  BRINCADEIRAS PARA GINCANAS NAS FÉRIAS DAS CRIANÇAS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <section id="projetos" class="projetos">
+        <h2>Projeto</h2>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2>Sobre</h2>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+    </section>
+    
+
+
+    <script src="js/script.js"> </script>
+
+  </body>
 </html>
