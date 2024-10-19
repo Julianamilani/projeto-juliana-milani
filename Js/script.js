@@ -31,3 +31,14 @@ menuLinks.forEach(item => {
         item.classList.add("active");
     })
 })
+
+
+/** * Animation on scroll */
+
+window.addEventListener('load', () => {
+    AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: false,
+        mirror: false })
+});
