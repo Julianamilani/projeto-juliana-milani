@@ -437,6 +437,7 @@ p {
     align-items: center;
     gap: 1.5rem;
     border-top: 1px solid var(--border-color);
+    /* Variável Borda */
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -454,15 +455,24 @@ p {
     text-transform: uppercase;
 }
 
+/* Roda Pé == FOOTER */
+footer {
+margin-bottom: 5rem;
+}
+
+footer p {
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p a {
+    color: #d516dc;
+}
 
 
 
-
-
-
-/* Responsividade 
-Responsivo
-*/
+/* Responsividade Responsivo */
 
 @media (min-width: 768px) {
     #header {
