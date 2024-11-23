@@ -7,7 +7,6 @@
     --icone-tema: #d7b21e;
     --menu-texto: #ebebeb;
     --color-title: #c410d4;
-    --border-color:#c410d4;
 }
 
 :root[data-theme="light"] {
@@ -16,7 +15,6 @@
     --hover-menu: #898989;
     --menu-texto: #1d1d1d;
     --color-title: #c410d4;
-    --border-color:#c410d4;
 }
 
 
@@ -58,13 +56,9 @@ h1 {
     font-weight: 200;
 }
 
-h2 {
-    font-family: "Creepster", system-ui; /* verificar */
-}
+h2 {}
 
-h3 {
-    font-family: "Creepster", system-ui; /* verificar */
-}
+h3 {}
 
 p,
 span,
@@ -171,7 +165,8 @@ p {
     /* cor de link */
 }
 
-.menu-icon,.menu-text {
+.menu-icon,
+.menu-text {
     color: var(--menu-texto);
     font-weight: 600;
 }
@@ -216,7 +211,8 @@ p {
     transition: ease-in-out .5s;
 }
 
-.btn span,.btn i {
+.btn span,
+.btn i {
     font-size: 1.5rem;
     text-transform: uppercase;
 }
@@ -248,9 +244,12 @@ p {
     aspect-ratio: 16/9;
 }
 
-#home,.projetos,.sobre,.contato {
+#home,
+.projetos,
+.sobre,
+.contato {
     /* padding: 5rem 10rem */
-    padding: 2.5rem 1rem;
+    padding: 5rem 10rem;
 }
 
 /* Projetos */
@@ -295,20 +294,23 @@ p {
 }
 
 
-.card-lista, .sobre-lista {
+.card-lista,
+.sobre-lista {
     /* estrutura lista */
     margin-left: 1.25rem;
     margin-top: 15px;
     margin-bottom: 25px;
 }
 
-.card-item, .sobre-item {
+.card-item,
+.sobre-item {
     /* topicos lista */
     list-style: square;
     margin-top: 5px;
 }
 
-.card-button, .card-descricao {
+.card-button,
+.card-descricao {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -338,11 +340,11 @@ p {
 }
 
 .sobre-logo {
-    width: 100%;
+    width: 75%;
     object-fit: cover;
     object-position: center;
     pointer-events: none;
-    border-radius: 50rem;
+    border-radius: 60rem;
     border: 8px solid var(--primary-color);
 }
 
@@ -388,7 +390,7 @@ p {
     gap: 0.5rem;
 }
 
-.accordion-header1 {
+.accordion-header {
     width: 100%;
     display: flex;
     padding: 0.75rem 1rem;
@@ -401,12 +403,12 @@ p {
     transition: ease-in-out 0.3s;
 }
 
-.accordion-header1 span {
+.accordion-header span {
     color: var(--color-title);
 }
 
 /* esconder as respostas */
-.accordion-body1 {
+.accordion-body {
     display:none;
     padding: 1.25rem;
     flex-direction: column;
@@ -415,12 +417,12 @@ p {
     border: 1px solid var(--primary-color);
 }
 
-.accordion-item.active .accordion-header1 {
+.accordion-item.active .accordion-header {
     background: var(--menu-texto);
 }
 
 /* conteudo aparece após o click */
-.accordion-item.active .accordion-body1 {
+.accordion-item.active .accordion-body {
     display: flex;
 }
 
@@ -428,51 +430,13 @@ p {
   transform: rotate(180deg);
 }
 
-/* Contato */
-
-.contato {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    border-top: 1px solid var(--border-color);
-    /* Variável Borda */
-    border-bottom: 1px solid var(--border-color);
-}
-
-.contato p {
-    text-align: center;
-    /* font-family:""; */
-    /* color: var(); */
-}
-
-.contato .btn {
-    width: auto; /* correção */
-}
-
-.contato .email {
-    text-transform: uppercase;
-}
-
-/* Roda Pé == FOOTER */
-footer {
-margin-bottom: 5rem;
-}
-
-footer p {
-    font-size: 0.875rem;
-    text-align: center;
-    padding: 1rem;
-}
-
-footer p a {
-    color: #d516dc;
-}
 
 
 
-/* Responsividade Responsivo */
+
+/* Responsividade 
+Responsivo
+*/
 
 @media (min-width: 768px) {
     #header {
@@ -501,18 +465,21 @@ footer p a {
         font-size: 3rem;
     }
 
-    #home, .projetos, .sobre {
-        padding: 8rem 6rem 4rem 6rem;
-    }
-
+    #home,
+    .projetos,
+    .sobre,
     .contato {
-        padding: 6rem;
+        padding: 8rem 6rem 4rem 6rem;
     }
 }
 
+
+
 /* Fim 768 */
 
-@media (min-width: 992px) { /* a partir de 992 */
+@media (min-width: 992px) {
+
+    /* a partir de 992 */
     .projeto-card {
         flex-direction: row;
     }
@@ -554,9 +521,12 @@ footer p a {
         width: auto;
     }
 
-    p, span, li {
+    p,
+    span,
+    li {
         font-size: 1.15rem;
     }
+
     .card-button .btn,
     .descricao-button .btn {
         width: auto;
@@ -580,7 +550,9 @@ footer p a {
         padding: 12rem 15rem 2rem;
     }
 
-    .projetos, .sobre, .contato {
+    .projetos,
+    .sobre,
+    .contato {
         padding: 10rem 15rem 4rem;
     }
 }
